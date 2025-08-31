@@ -1,0 +1,48 @@
+.sponsors-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.sponsors-title {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00adb5, #9b59b6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sponsors-subtitle {
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+  justify-items: center;
+}
+
+.sponsor-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(155, 89, 182, 0.4);
+}
+
+.sponsor-logo {
+  max-width: 100px;
+  margin-bottom: 0.6rem;
+}
+
+.sponsor-name {
+  font-size: 0.9rem;
+  color: #eaeaea;
+}
