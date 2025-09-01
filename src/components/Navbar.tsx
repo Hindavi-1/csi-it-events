@@ -65,10 +65,10 @@ export default function Navbar() {
 
           {/* Actions */}
           <div className="navbar-actions">
-            {/* Theme Toggle */}
+            {/* Theme Toggle
             <button onClick={toggleTheme} className="theme-toggle">
               {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+            </button> */}
 
             {/* Mobile Menu Button */}
             <button onClick={toggleMenu} className="mobile-menu-btn">
