@@ -2,6 +2,7 @@
 
 
 // import React, { useEffect } from 'react';
+import Image from "next/image";
 import "./Hero.css";
 
 const Hero: React.FC = () => {
@@ -11,12 +12,33 @@ const Hero: React.FC = () => {
         {/* Hero Content */}
         <div className="hero-content">
            <h2 className="hero-subheading">
-           <span className="animated-text csi-text"> CSI-IT </span> Club, FCRIT</h2>
-            <h3 className="animated-text presents-text">presents</h3>
-          <h1 className="hero-heading">
-            <span className="animated-text glitch-text">TECHNO</span><span className="animated-text techno-text glitch-text">Vation</span>  
-            <span className="year-text">2025</span>
-          </h1>
+             <div className="csi-logo-container">
+               <div className="logo-circle">
+                 <Image 
+                   src="/logo.png" 
+                   alt="CSI-IT Logo" 
+                   width={50} 
+                   height={50} 
+                   className="csi-logo"
+                 />
+               </div>
+               <div className="text-container">
+                 <span className="animated-text csi-text">CSI-IT</span>
+                 <span className="fcrit-text">  FCRIT</span>
+               </div>
+             </div>
+           </h2>
+            <h3 className="presents-text">𝓅𝓇𝑒𝓈𝑒𝓃𝓉𝓈</h3>
+          <div className="technovation-container">
+            <Image 
+              src="/TECHNOVation.gif" 
+              alt="TECHNOVation 2025" 
+              width={800} 
+              height={300} 
+              className="technovation-gif"
+              priority
+            />
+          </div>
           
           <p className="hero-description">
  <b> A 3-day celebration of innovation, creativity, and talent </b>– 
