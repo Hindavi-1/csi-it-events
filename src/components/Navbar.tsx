@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import Image from "next/image";
 import "../styles/Navbar.css";
 
 export default function Navbar() {
@@ -38,7 +39,16 @@ export default function Navbar() {
       >
         <div className="navbar-container">
           {/* Logo */}
-          <h1 className="navbar-logo">CSI-IT</h1>
+          <div className="logo-container">
+            <Image 
+              src="/fcrit_logo.png" 
+              alt="FCRIT Logo" 
+              width={50} 
+              height={50} 
+              className="fcrit-logo"
+            />
+            <h1 className="navbar-logo">Fr. C. Rodrigues Institute of Technology</h1>
+          </div>
 
           {/* Desktop Menu */}
           <div className="navbar-links">
