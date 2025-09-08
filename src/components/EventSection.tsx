@@ -13,6 +13,7 @@ type EventType = {
   description?: string;
   seatLimit?: number;
   seatsTaken?: number;
+  whatsappLink?: string;
 };
 
 // Complete event data organized by days
@@ -28,6 +29,7 @@ const eventsData: EventType[] = [
     description: "Mini hackathon style PPT challenge where ideas meet innovation.",
     seatLimit: 25,
     seatsTaken: 18,
+    whatsappLink: "https://chat.whatsapp.com/pitch-a-thon"
   },
   {
     id: "2",
